@@ -60,6 +60,16 @@
 			
 			</div>
 			
+
+			<!-- Form Input -->
+			
+			<div class="form-group">
+				
+				{!! Form::label('screen','Screen ID') !!}
+				
+				{!! Form::text('screen',$button->screen,['class' => 'form-control','placeholder'=>''] ) !!}
+			
+			</div>
 			
 			
 			<!-- Form Input -->
