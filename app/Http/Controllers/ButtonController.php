@@ -45,6 +45,7 @@ class ButtonController extends Controller
             'title'=>$request->input('title'),
             'tag'=>$request->input('tag'),
             'length'=>$request->input('length'),
+            'screen'=>$request->input('screen'),
         ]);
 
         return redirect()->route('admin.button.index')->with('message',"$button->title created");
@@ -86,6 +87,7 @@ class ButtonController extends Controller
         $button->title = $request->input('title');
         $button->tag = $request->input('tag');
         $button->length = $request->input('length');
+        $button->screen = $request->input('screen');
         $button->save();
 
         return redirect()->route('admin.button.index')->with('message',"$button->title edited");
